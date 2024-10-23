@@ -1,4 +1,4 @@
-name: X86_64 OpenWrt
+name: X86_64 OpenWrt ZY
 
 on:
   workflow_dispatch:
@@ -6,10 +6,10 @@ on:
     - cron: 0 19 * * *
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/sclsyin/lede
   REPO_BRANCH: master
   CONFIG_FILE: configs/x86_64.config
-  DIY_SCRIPT: diy-script.sh
+  DIY_SCRIPT: diy-x86-64-zy.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
